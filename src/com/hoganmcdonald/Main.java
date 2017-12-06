@@ -4,6 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 	int day1 = Day1.solve();
-	System.out.println(day1);
+	int day2 = Day2.solve();
+
+	System.out.println(day2);
     }
 }
