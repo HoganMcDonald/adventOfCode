@@ -3,9 +3,17 @@ package com.hoganmcdonald;
 public class Main {
 
     public static void main(String[] args) {
-	int day1 = Day1.solve();
-	int day2 = Day2.solve();
+        int daysComplete = 3;
 
-	System.out.println(day2);
+        int[] results = new int[] {Day1.solve(),
+                Day2.solve(),
+                Day3.solve()};
+
+
+        for (int i = 1; i <= daysComplete; i++) {
+            String day = Integer.toString(i);
+            String result = Integer.toString(results[i - 1]);
+            System.out.printf("%nDay %s : %s%n", day, result);
+        }
     }
 }
