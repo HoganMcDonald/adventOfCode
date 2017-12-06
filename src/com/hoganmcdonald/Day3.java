@@ -11,7 +11,7 @@ public class Day3 {
 
     public static int solve() {
         int[] coordinates = spiral(input);
-        System.out.printf("coordinates are: (%d, %d)", coordinates[0], coordinates[1]);
+//        System.out.printf("coordinates are: (%d, %d)", coordinates[0], coordinates[1]);
 
         int path = Math.abs(coordinates[0]) + Math.abs(coordinates[1]);
         return path;

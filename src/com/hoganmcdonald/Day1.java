@@ -29,14 +29,12 @@ public class Day1 {
         for (int i = 0; i <= captcha.length() - 1; i++) {
             int value;
 
-            // first half
-            if (i < distance &&
-                    captcha.charAt(i) == captcha.charAt(i + 1)) {
+            int partnerIndex = (i + distance >= captcha.length()) ? i + distance - captcha.length() : i + distance;
+
+            if (captcha.charAt(i) == captcha.charAt(partnerIndex)) {
                 value = captcha.charAt(i) - '0';
                 result += value;
             }
-
-
         }
         return result;
     }
