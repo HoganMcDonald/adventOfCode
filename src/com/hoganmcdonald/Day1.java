@@ -22,4 +22,10 @@ public class Day1 {
         return result;
     }
 
+    public static int bonus() {
+        int result = 0;
+
+        return result;
+    }
+
 }
