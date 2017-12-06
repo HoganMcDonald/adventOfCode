@@ -24,7 +24,20 @@ public class Day1 {
 
     public static int bonus() {
         int result = 0;
+        int distance = captcha.length() / 2;
 
+        for (int i = 0; i <= captcha.length() - 1; i++) {
+            int value;
+
+            // first half
+            if (i < distance &&
+                    captcha.charAt(i) == captcha.charAt(i + 1)) {
+                value = captcha.charAt(i) - '0';
+                result += value;
+            }
+
+
+        }
         return result;
     }
 
