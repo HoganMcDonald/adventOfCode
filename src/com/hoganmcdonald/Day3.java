@@ -17,6 +17,12 @@ public class Day3 {
         return path;
     }
 
+    public static int bonus() {
+        int result = 0;
+        // https://oeis.org/A141481/b141481.txt
+        return result;
+    }
+
     private static int[] spiral(int iterations) {
         int iteration = 1;
         String direction = "right";

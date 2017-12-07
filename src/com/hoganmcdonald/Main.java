@@ -9,7 +9,9 @@ public class Main {
                 Day2.solve(),
                 Day3.solve()};
 
-        int[] bonuses = new int[] {Day1.bonus()};
+        int[] bonuses = new int[] {Day1.bonus(),
+                Day2.bonus(),
+                Day3.bonus()};
 
 
         for (int i = 1; i <= daysComplete; i++) {
@@ -19,7 +21,7 @@ public class Main {
                 System.out.printf("Day %s : %s%n", day, result);
             } else {
                 String bonus = Integer.toString(bonuses[i - 1]);
-                System.out.printf("Day %s : %s%n  Bonus: %s %n", day, result, bonus);
+                System.out.printf("Day %s : %s%n  Bonus: %s%n", day, result, bonus);
             }
 
         }
