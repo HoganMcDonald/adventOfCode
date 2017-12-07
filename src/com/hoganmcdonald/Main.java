@@ -1,13 +1,21 @@
 package com.hoganmcdonald;
 
+import java.io.IOException;
+
 public class Main {
 
-    public static void main(String[] args) {
-        int daysComplete = 3;
+    public static void main(String[] args) throws IOException {
+        int daysComplete = 4;
 
-        int[] results = new int[] {Day1.solve(),
-                Day2.solve(),
-                Day3.solve()};
+        int[] results = new int[0];
+        try {
+            results = new int[] {Day1.solve(),
+                    Day2.solve(),
+                    Day3.solve(),
+                    Day4.solve()};
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         int[] bonuses = new int[] {Day1.bonus(),
                 Day2.bonus(),
